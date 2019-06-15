@@ -42,9 +42,13 @@
                                     </button>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-Af-Re2">
                                         <rect key="frame" x="0.0" y="104.33333333333337" width="320" height="320"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="8nd-Af-Re2" secondAttribute="height" multiplier="1:1" id="VRd-rZ-OjF"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="hrg-ak-QHJ" appends="YES" id="sym-38-xi6"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -63,9 +67,15 @@
                     <connections>
                         <outlet property="mealNameLabel" destination="RFV-QZ-jbj" id="kT5-qI-1iX"/>
                         <outlet property="nameTextField" destination="oHY-Xl-Qfu" id="eSM-WZ-WJ4"/>
+                        <outlet property="photoImageView" destination="8nd-Af-Re2" id="mub-F1-XKG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hrg-ak-QHJ">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="9qS-cx-ZPy"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="138.91625615763547"/>
         </scene>
