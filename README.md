@@ -14,3 +14,11 @@ Lesson 1 - Building a basic UI
 * View and rearrange UI elements using the outline view
 * Preview a storyboard UI using the Assistant editor’s Preview mode
 * Use Auto Layout to lay out a UI that automatically adapts to the user’s device size
+
+Lesson 2 - Connect the UI to the source code 
+* Explain the relationship between a scene in a storyboard and the underlying view controller
+* Create outlet and action connections between UI elements in a storyboard and source code
+* Process user input from a text field and display the result in the UI
+* Make a class conform to a protocol
+* Understand the delegation pattern
+* Follow the target-action pattern when designing app architecture
